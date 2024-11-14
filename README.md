@@ -231,23 +231,23 @@ const res = await flashbotsProvider.sendPrivateTransaction(
 )
 ```
 
-## Flashbots on Goerli
+## Flashbots on Sepolia
 
-To test Flashbots before going to mainnet, you can use the Goerli Flashbots relay, which works in conjunction with a Flashbots-enabled Goerli validator. Flashbots on Goerli requires two simple changes:
+To test Flashbots before going to mainnet, you can use the Sepolia Flashbots relay, which works in conjunction with a Flashbots-enabled Sepolia validator. Flashbots on Sepolia requires two simple changes:
 
-1. Ensure your genericProvider passed in to the FlashbotsBundleProvider constructor is connected to Goerli (gas estimates and nonce requests need to correspond to the correct chain):
+1. Ensure your genericProvider passed in to the FlashbotsBundleProvider constructor is connected to Sepolia (gas estimates and nonce requests need to correspond to the correct chain):
 
 ```ts
 import { providers } from 'ethers'
-const provider = providers.getDefaultProvider('goerli')
+const provider = providers.getDefaultProvider('sepolia')
 ```
 
-2. Set the relay endpoint to `https://relay-goerli.flashbots.net/`
+2. Set the relay endpoint to `https://relay-sepolia.flashbots.net/`
 
 ```ts
 const flashbotsProvider = await FlashbotsBundleProvider.create(
   provider,
   authSigner,
-  'https://relay-goerli.flashbots.net/',
-  'goerli')
+  'https://relay-sepolia.flashbots.net/',
+  'sepolia')
 ```
