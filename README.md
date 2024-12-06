@@ -14,14 +14,14 @@ Install ethers.js and the Flashbots ethers bundle provider.
 
 ```bash
 npm install --save ethers
-npm install --save @flashbots/ethers-provider-bundle
+npm install --save @flashbots-sdk/ethers-provider-bundle
 ```
 
 Open up a new TypeScript file (this also works with JavaScript if you prefer)
 
 ```ts
 import { providers, Wallet } from "ethers";
-import { FlashbotsBundleProvider } from "@flashbots/ethers-provider-bundle";
+import { FlashbotsBundleProvider } from "@flashbots-sdk/ethers-provider-bundle";
 
 // Standard json rpc provider directly from ethers.js (NOT Flashbots)
 const provider = new providers.JsonRpcProvider({ url: ETHEREUM_RPC_URL }, 1)
