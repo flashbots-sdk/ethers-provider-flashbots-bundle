@@ -1,12 +1,12 @@
 {
-  "name": "@flashbots/ethers-provider-bundle",
-  "version": "0.6.1",
+  "name": "@flashbots-sdk/ethers-provider-bundle",
+  "version": "0.6.2",
   "description": "",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/flashbots/ethers-provider-flashbots-bundle.git"
+    "url": "https://github.com/flashbots-sdk/ethers-provider-flashbots-bundle.git"
   },
   "scripts": {
     "demo": "npx ts-node --project tsconfig.json src/demo.ts",
