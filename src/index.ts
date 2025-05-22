@@ -376,7 +376,8 @@ export class FlashbotsBundleProvider extends providers.JsonRpcProvider {
       minTimestamp: opts?.minTimestamp,
       maxTimestamp: opts?.maxTimestamp,
       revertingTxHashes: opts?.revertingTxHashes,
-      replacementUuid: opts?.replacementUuid
+      replacementUuid: opts?.replacementUuid,
+      builders: ["rsync", "beaverbuild.org", "builder0x69"]
     }
 
     const request = JSON.stringify(this.prepareRelayRequest('eth_sendBundle', [params]))
